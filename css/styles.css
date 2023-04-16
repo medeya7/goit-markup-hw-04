@@ -9,6 +9,9 @@
     --ocean: #404BBF;
     --cloud: #F4F4FD;
     --mood: #e7e9fc;
+    --light-slate: #8e8f99;
+    --icons-customers: #afb1b8;
+    --green: #31d0aa;
 
 }
 
@@ -242,10 +245,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     background-color: var(--accent-color);
-    background-image: url(../images/hero/people_office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url(../images/hero/people_office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+   
 
  }
 
@@ -292,6 +296,24 @@ img {
 
 /* DESCRIPTION */
 
+
+
+.description-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
+.doing-wrapper {
+
+background: var(--cloud);
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 112px;
+margin-bottom: 8px;
+
+}
+
 .page-container {
     display: flex;
     align-items: center;
@@ -327,6 +349,35 @@ img {
 
 /* OUR TEAM */
 
+.socials {
+    margin-top: 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.socials-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--logo-color);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    background: var(--ocean);
+}
+
+.socials-icom {
+    fill: var(--cloud);
+}
+
+
 
 
 .our-team {
@@ -354,7 +405,86 @@ img {
      text-align: center;
 }
 
+/* CUSTOMERS */
+
+.customers .title-description {
+    margin-bottom: 72px;
+    line-height: 1.1;
+}
+
+.customers-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.customers {
+    background-color: var(--white);
+    padding: 120px 0;
+
+}
+
+.customers-item {
+    width: calc((100% - 120px) / 6);
+}
+
+.customers-link {
+    border: 1px solid var(--light-slate);
+    border-radius: 4px;
+    padding: 16px 32px;
+    display: flex;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    color: var(--icons-customers);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--ocean);
+    color: var(--ocean);
+}
+
+
+.customers-icon {
+    fill: currentColor;
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: currentColor;
+}
+
+.customers-container {
+    width: 1128px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
 /* FOOTER */
+
+.logo-tipe .social-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-tipe .footer-container {
+    display: flex;
+    gap: 120px;
+    align-items: baseline;
+}
+
+.social-link:hover
+.social-link:focus {
+    background-color: var(--green);
+
+}
+
 
 .logo-tipe {
     background-color: var(--navy-blue);
@@ -379,14 +509,28 @@ img {
 
 }
 
-.title-section {
+.title-social-media {
     font-weight: 500;
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    margin-bottom: 16px;
 
 }
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    
+}
+
+
+
+
+
 
 /* PORTFOLIO */
 
